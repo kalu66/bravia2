@@ -2,7 +2,7 @@ Here are some commands that were being sent in CURL form.
 They work without authentication. Maybe they are useful to
 you.
 
-curl -v -XPOST http://192.168.1.135/sony/appControl -d '{"method":"setActiveApp","params":[{"uri":"https://plex.tv/web/tv/opera"}],"id":4,"version":"1.0"}' -H "X-Auth-PSK: NX6MwAo4"
+curl -v -XPOST http://192.168.1.135/sony/appControl -d '{"method":"getActiveApp","params":[{"uri":"https://plex.tv/web/tv/opera"}],"id":4,"version":"1.0"}' -H "X-Auth-PSK: NX6MwAo4"
 
 curl -v -XPOST http://192.168.178.27/sony/system -d '{"method":"getMethodTypes","params":[""],"id":1,"version":"1.0"}'
 
